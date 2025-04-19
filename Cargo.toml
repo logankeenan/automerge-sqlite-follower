@@ -1,0 +1,13 @@
+[package]
+name = "automerge-sqlite-follower"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+automerge = "0.6.0"
+uuid = "1.15.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+sqlx = { version = "0.7", features = ["runtime-tokio", "sqlite", "uuid", "time"] }
